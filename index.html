@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="submission.tugasakhir.">
+  
+  <title>Kang Guru - Taufik Hidayat</title>
+
+  <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+  <header>
+    <h1>Kang<span class="primary"> Guru</span></h1>
+    
+    <nav>
+      <ul>
+        <li>
+          <a onclick="home()">Beranda</a>
+        </li>
+        <li>
+          <a onclick="about()">Tentang</a>
+        </li>
+        <li>
+          <a onclick="contact()">Kontak</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- content -->
+    <div id="content">
+      <article id="home">
+        <h2>Selamat Datang!</h2>
+        <p>
+          Web ini merupakan "Submisson: Tugas Akhir Membuat Website" dari kelas Pemrograman Web Front End dari program Dicoding Academy IDCamp Teacher.
+        </p>
+      </article>
+
+      <article id="about">
+        <h2>Tentang Saya</h2>
+        <p>
+          Halo! Saya Taufik Hidayat. Saya merupakan pengajar salah satu SMK Negeri di Kota Tasikmalaya. 
+        </p>
+        <p>
+          Saya bermula mengajar di Program Keahlian Teknik Komputer dan Informatika, pada kompetensi keahlian Teknik Komputer dan Jaringan pada Juli 2012 sampai dengan Mei 2022.
+          Namun pada bulan Juni 2022 sampai dengan sekarang, saya memulai mengajar di Program Keahlian Pengembangan Perangkat Lunak dan Gim pada konsentrasi keahlian Rekayasa Perangkat Lunak.  
+        </p>
+        <p>
+          Dan petualangan di bidang <em>programming</em> pun dimulai.
+        </p>
+      </article>
+      
+      <article id="contact">
+        <h2>Kontak</h2>
+        <ul>
+          <li>Instagram: @kangtaufikhidayat</li>
+          <li>LinkedIn: @taufiktsm</li>
+          <li>eMail: taufik@smkn4-tsm.sch.id</li>
+        </ul>
+        <form id="form">
+          <div class="form">
+            <input onkeyup="inputNama(event)" type="text" class="form-input" placeholder="nama" required>
+          </div>
+          <div class="form">
+            <input type="email" class="form-input" placeholder="email" required>
+          </div>
+          <div class="form">
+            <input type="subyek" class="form-input" placeholder="subyek" required>
+          </div>
+          <div class="form">
+            <textarea class="form-input" rows="5" placeholder="tulis pesan disini" required></textarea>
+          </div>
+          <button>Kirim</button>
+        </form>
+      </article>
+    </div>
+
+    <!-- aside -->
+    <aside>
+      <div class="profile">
+        <img src="./assets/image/profil.png" class="foto" alt="foto profile">
+        <div class="name">Taufik Hidayat</div>
+        <div><em>Pengajar</em></div>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    &copy; <span id="footer-year"></span>. <span id="profile-id"></span>
+    <select onchange="darkMode(this.value)" style="float: right">
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+    </select>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
